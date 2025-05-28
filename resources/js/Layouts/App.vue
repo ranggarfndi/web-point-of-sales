@@ -25,7 +25,7 @@
                 <!-- end content -->
 
                 <footer class="c-footer">
-                    <div><strong>APLIKASI KASIR</strong> &copy; 2022 - SantriKoding.com.</div>
+                    <div><strong>APLIKASI POINT OF SALES</strong> &copy; 2025 - RANGGA RAFANDI - 2114370113</div>
                 </footer>
             </div>
         </div>
