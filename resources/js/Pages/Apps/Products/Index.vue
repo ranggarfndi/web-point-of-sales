@@ -34,7 +34,15 @@
                                     </thead>
                                     <tbody>
                                         <tr v-for="(product, index) in products.data" :key="index">
-                                            <td class="text-center">{{ product.barcode }}</td>
+                                            <td class="text-center">
+                                                <Barcode
+                                                    :value="product.barcode"
+                                                    :format="'CODE39'"
+                                                    :lineColor="'#000'"
+                                                    :width="1"
+                                                    :height="20"
+                                                />
+                                            </td>
                                             <td>{{ product.title }}</td>
                                             <td>Rp. {{ formatPrice(product.buy_price) }}</td>
                                             <td>Rp. {{ formatPrice(product.sell_price) }}</td>
@@ -72,6 +80,9 @@
     //import sweet alert2
     import Swal from 'sweetalert2';
 
+    //import component barcode
+    import Barcode from '../../../Components/Barcode.vue';
+
     export default {
         //layout
         layout: LayoutApp,
@@ -81,6 +92,7 @@
             Head,
             Link,
             Pagination,
+            Barcode
         },
 
         //props
